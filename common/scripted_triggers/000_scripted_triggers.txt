@@ -1,0 +1,15 @@
+has_production_building_trigger = {
+	OR = {
+		has_building = workshop
+		has_building = counting_house
+		has_building = steam_factory
+		custom_trigger_tooltip = {
+			tooltip = silver_tooltip
+			OR = {
+				trade_goods = silver
+				trade_goods = gold
+			}
+		}
+	}
+}
+
