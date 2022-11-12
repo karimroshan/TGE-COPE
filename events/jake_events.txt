@@ -1,0 +1,36 @@
+
+namespace = jake_events
+
+country_event = {
+
+	id = jake_events.1
+	title = "jake_events_1_t"
+	desc = "jake_events_1_d"
+	hidden = no
+	picture = POPE_PREACHING_eventPicture
+		
+	trigger = {
+		has_idea = urban_5
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "jake_events_1_o"
+
+		every_owned_province = {
+			limit = {
+                AND = {
+                    has_terrain = farmlands 
+                    NOT = { has_province_modifier = urban_dev }
+                }
+			}
+			add_province_modifier = {
+				name = "urban_dev"
+				duration = -1
+			}
+		}
+	}
+}
