@@ -112,7 +112,7 @@ progress_ideas = {
         unjustified_demands = -0.25
     }
     progress_6 = {
-        infantry_fire = 1
+        infantry_fire = 0.5
         artillery_cost = -0.15
     }
     progress_7 = {
@@ -120,6 +120,40 @@ progress_ideas = {
         idea_cost = -0.10
     }
     
+    ai_will_do = {
+        factor = 1.0
+    }
+}
+
+#Urban (Exclusive with Agriculture)
+urban_ideas = {
+    category = DIP
+
+    bonus = {
+        advisor_cost = -0.15
+    }
+    urban_1 = {
+        advisor_cost = -0.15
+    }
+    urban_2 = {
+        advisor_cost = -0.15
+    }
+    urban_3 = {
+        advisor_cost = -0.15
+    }
+    urban_4 = {
+        advisor_cost = -0.15
+    }
+    urban_5 = {
+        advisor_cost = -0.15
+    }
+    urban_6 = {
+        advisor_cost = -0.15
+    }
+    urban_7 = {
+        advisor_cost = -0.15
+    }
+
     ai_will_do = {
         factor = 1.0
     }

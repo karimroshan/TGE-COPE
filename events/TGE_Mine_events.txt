@@ -21,6 +21,7 @@ province_event = {
 				which = FailChance
 				value = 80
 			}
+			
 			set_variable = {
 				which = SuccessChance
 				value = 20
