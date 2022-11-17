@@ -1,0 +1,40 @@
+GBR_ideas = {
+	start = {
+		naval_morale = 0.20
+		heavy_ship_power = 0.15
+	}
+
+	bonus = {
+		navy_tradition = 1
+	}
+	
+	trigger = {
+		tag = GBR
+	}
+	free = yes		#will be added at load.
+
+	gbr_vassal = {
+		vassal_forcelimit_bonus = 0.15
+		governing_capacity_modifier = 0.1
+	}
+	gbr_colonize = {
+		global_colonial_growth = 20
+	}
+	gbr_redcoats = {
+		infantry_power = 0.15
+	}
+	gbr_tech_idea = {
+		technology_cost = -0.05
+	}
+	gbr_army_reform = {
+		discipline = 0.05
+	}
+	gbr_industry = {
+		global_trade_goods_size_modifier = 0.2
+	}
+	gbr_rule_britannia = {
+		leader_naval_manuever = 1
+		blockade_efficiency = 0.33
+		allowed_marine_fraction = 0.50
+	}
+}   
