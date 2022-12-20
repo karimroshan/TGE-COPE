@@ -1,0 +1,108 @@
+namespace = women_history_events
+
+normal_or_historical_nations = yes
+
+# Margaret of Anjou
+country_event = {
+	id = women_history_events.27
+	title = women_history_events.27.t
+	desc = women_history_events.27.d
+	picture = wihgfx_FEMALE_RULER_eventPicture
+
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		NOT = {
+			is_year = 1500
+		}
+		is_female = no
+		has_regency = no
+		is_lesser_in_union = no
+		has_consort = no
+		government = monarchy
+		NOT = {
+			OR = {
+				ADM = 3
+				DIP = 3
+				MIL = 3
+			}
+		}
+		NOT = {
+			has_global_flag = wih_margaretofanjou_flag
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = wih_margaretofanjou_flag
+		}
+	}
+	option = {
+		name = women_history_events.27.c
+		define_ruler = {
+			name = "Margaret"
+			dynasty = "d'Anjou"
+			culture = cosmopolitan_french
+			adm = 3
+			dip = 4
+			mil = 3
+			female = yes
+		}
+		if = {
+			limit = {
+				has_states_general_mechanic = yes
+			}
+			change_statists_vs_orangists = 1
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality_ancestor = { key = righteous } }
+		}
+	}
+	option = {
+		name = women_history_events.27.a
+		trigger = {
+			has_dlc = "Rights of Man"
+			has_government_attribute = queen
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_meritocracy_effect = yes
+		define_consort = {
+			name = "Margaret"
+			dynasty = "d'Anjou"
+			culture = cosmopolitan_french
+			adm = 3
+			dip = 4
+			mil = 3
+			female = yes
+		}
+		hidden_effect = {
+			add_queen_personality_ancestor = { key = righteous }
+		}
+	}
+	option = {
+		name = women_history_events.27.b
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_meritocracy_effect = yes
+		define_advisor = {
+			female = yes
+			type = statesman
+			culture = cosmopolitan_french
+			discount = yes
+			skill = 2
+			name = "Margaret d'Anjou"
+		}
+	}
+}

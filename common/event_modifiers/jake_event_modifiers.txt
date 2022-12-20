@@ -1,3 +1,8 @@
 urban_dev = {
     local_development_cost = -0.1
 }
+
+wales_mission_bonus = {
+    local_development_cost = -0.05
+    trade_goods_size_modifier = 0.25
+}
