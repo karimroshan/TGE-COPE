@@ -1,4 +1,5 @@
 version="0.1"
+replace_path="common/missions"
 tags={
 	"Loading Screen"
 }
