@@ -58,7 +58,7 @@ tradition_ideas = {
     tradition_3 = {
         church_loyalty_modifier = 0.10
         burghers_loyalty_modifier = -0.10
-        nobility_loyalty_modifier = 0.15
+        nobles_loyalty_modifier = 0.15
     }
     tradition_4 = {
         trade_goods_size_modifier = 0.15
@@ -100,7 +100,7 @@ progress_ideas = {
     progress_3 = {
         church_loyalty_modifier = -0.15
         burghers_loyalty_modifier = 0.10
-        nobility_loyalty_modifier = 0.10
+        nobles_loyalty_modifier = 0.10
     }
     progress_4 = {
         production_efficiency = 0.15
